@@ -29,14 +29,9 @@ class LoginForm extends React.Component {
   }
 
   handleSubmit(event) {
-    // alert('A submission occured');
-
-    event.preventDefault();    
-    useEffect(() => {
-      sessionStorage.setItem('state', "isLoggedIn")
-    }, true)
-    Router.push('/')
-    //something else 
+    event.preventDefault();
+    sessionStorage.setItem('state', 'isLoggedIn');
+    Router.push('/');
   }
 
   render() {
